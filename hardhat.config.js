@@ -1,5 +1,4 @@
 require("@nomicfoundation/hardhat-toolbox");
-
 require("dotenv").config();
 
 // npx hardhat compile
@@ -34,7 +33,7 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-      polygon: "FRESPWCDKGK7947Y3UH4GMIAJVK8QR4GP8",
+      polygon: process.env.POLYGONKEY,
     },
   },
   solidity: {
